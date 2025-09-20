@@ -8,3 +8,11 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+ /* Estilo para destacar o cabeçalho da coluna ordenada */
+.sorted{
+  background-color: #FFFF99; /* Define um fundo amarelo claro */
+  font-weight: bold;       /* Deixa o texto em negrito */
+  color: black;            /* Garante que o texto seja preto para boa leitura */
+  border-radius: 5px;      /* Adiciona cantos arredondados (opcional) */
+  padding: 2px 5px;        /* Adiciona um pequeno espaçamento interno (opcional) */
+}
