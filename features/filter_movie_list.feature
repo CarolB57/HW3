@@ -9,9 +9,11 @@ Background:
     | title                   | rating | release_date |
     | Aladdin                 | G      | 25-Nov-1992  |
     | The Lion King           | G      | 24-Jun-1994  |
+    | Star Wars               | PG     | 25-May-1977  |
     | The Terminator          | R      | 26-Oct-1984  |
     | When Harry Met Sally... | R      | 21-Jul-1989  |
     | Amelie                  | R      | 25-Apr-2001  |
+    | The Incredibles         | PG     | 05-Nov-2004  |
 
 Scenario: restrict to movies with 'PG' or 'R' ratings [cite: 32]
     Given I am on the RottenPotatoes home page

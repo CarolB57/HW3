@@ -6,6 +6,9 @@ class MoviesController < ApplicationController
     # Checa-se se params[:ratings] existe. Se existir, permite e converte para um hash normal. Se não, usa um hash vazio
     @ratings_selecionados = params[:ratings] ? params[:ratings].permit!.to_h : {}
 
+    # Variável para a View saber todos os ratings que existem
+    @all_ratings = Movie.all_ratings
+
     # Define a lista de ratings a serem mostrados
     if @ratings_selecionados.empty?
       @ratings_para_mostrar = Movie.all_ratings
@@ -15,9 +18,6 @@ class MoviesController < ApplicationController
 
     # Busca os filmes no banco, aplicando filtro e ordenação
     @movies = Movie.where(rating: @ratings_para_mostrar).order(@coluna_ordenada)
-
-    # Variável para a View saber todos os ratings que existem
-    @all_ratings = Movie.all_ratings
   end
 
   def show

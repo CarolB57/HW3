@@ -21,10 +21,8 @@
   <div class="row fw-bold">
     <div class="col-8">
       <% if 'title' == @coluna_ordenada %>
-        <%# CORREÇÃO APLICADA AQUI %>
         <%= link_to 'Movie Title', movies_path({ sort: 'title', ratings: @ratings_selecionados }), class: 'sorted', data: { turbo: false } %>
       <% else %>
-        <%# CORREÇÃO APLICADA AQUI %>
         <%= link_to 'Movie Title', movies_path({ sort: 'title', ratings: @ratings_selecionados }), data: { turbo: false } %>
       <% end %>
     </div>
