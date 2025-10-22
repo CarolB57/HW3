@@ -4,7 +4,7 @@ class MoviesController < ApplicationController
     @coluna_ordenada = params[:sort]
 
     # Checa-se se params[:ratings] existe. Se existir, permite e converte para um hash normal. Se não, usa um hash vazio
-    @ratings_selecionados = params[:ratings] ? params[:ratings].permit!.to_h : {}
+    @ratings_selecionados = params[:ratings] ? params[:ratings].permit(Movie.all_ratings).to_h : {}
 
     # Variável para a View saber todos os ratings que existem
     @all_ratings = Movie.all_ratings
