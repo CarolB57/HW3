@@ -57,7 +57,8 @@ group :development do
 end
 
 group :test do
-  # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
-  gem "capybara"
-  gem "selenium-webdriver"
+  gem 'cucumber-rails', require: false
+  gem 'capybara'
+  gem 'database_cleaner-active_record'
+  gem 'rspec-rails' # Mencionada no seu HW como fonte de erros, é bom tê-la. [cite: 78]
 end

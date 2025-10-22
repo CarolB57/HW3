@@ -13,7 +13,7 @@ class MoviesController < ApplicationController
       @ratings_para_mostrar = @ratings_selecionados.keys
     end
 
-    # Busca os filmes no banco, aplicando filtro E ordenação
+    # Busca os filmes no banco, aplicando filtro e ordenação
     @movies = Movie.where(rating: @ratings_para_mostrar).order(@coluna_ordenada)
 
     # Variável para a View saber todos os ratings que existem
