@@ -1,6 +1,7 @@
 # Homework 3: Criando User Stories para descrever as features da aplicação RottenPotatoes
 
 **Aluna:** Caroline Bohadana Rodrigues Viana
+
 **Matrícula:** 232050975
 
 A aplicação foi construída com o uso do framework **Ruby (3.4.6) on Rails (8.0.2.1)**, seguindo as orientações apresentadas na especificação do Homework 3 (BDD).
