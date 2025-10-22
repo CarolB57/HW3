@@ -1,4 +1,3 @@
-
 # Homework 3: Criando User Stories para descrever as features da aplicação RottenPotatoes
 
 **Aluna:** Caroline Bohadana Rodrigues Viana
