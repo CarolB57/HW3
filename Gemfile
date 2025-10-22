@@ -54,11 +54,12 @@ end
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
+  gem 'bundler-audit', require: false
 end
 
 group :test do
-  gem 'cucumber-rails', require: false
-  gem 'capybara'
-  gem 'database_cleaner-active_record'
-  gem 'rspec-rails' # Mencionada no seu HW como fonte de erros, é bom tê-la. [cite: 78]
+  gem "cucumber-rails", require: false
+  gem "capybara"
+  gem "database_cleaner-active_record"
+  gem "rspec-rails" # Mencionada no seu HW como fonte de erros, é bom tê-la. [cite: 78]
 end

@@ -85,6 +85,9 @@ GEM
     brakeman (7.1.0)
       racc
     builder (3.3.0)
+    bundler-audit (0.9.2)
+      bundler (>= 1.2.0, < 3)
+      thor (~> 1.0)
     capybara (3.40.0)
       addressable
       matrix
@@ -245,7 +248,7 @@ GEM
       nio4r (~> 2.0)
     raabro (1.4.0)
     racc (1.8.1)
-    rack (3.2.1)
+    rack (3.2.3)
     rack-session (2.1.1)
       base64 (>= 0.1.0)
       rack (>= 3.0.0)
@@ -385,7 +388,7 @@ GEM
     unicode-display_width (3.2.0)
       unicode-emoji (~> 4.1)
     unicode-emoji (4.1.0)
-    uri (1.0.3)
+    uri (1.0.4)
     useragent (0.16.11)
     web-console (4.2.1)
       actionview (>= 6.0.0)
@@ -413,6 +416,7 @@ PLATFORMS
 DEPENDENCIES
   bootsnap
   brakeman
+  bundler-audit
   capybara
   cucumber-rails
   database_cleaner-active_record
